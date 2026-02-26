@@ -8,7 +8,7 @@ while True:
   except ValueError:
     print("Вы ввели неверный тип данных.")
   except Exception as e:
-    print("F")
+    print("Другая ошибка")
   else:
     innStr = str(inn)
     if len(innStr) == 12:
