@@ -11,5 +11,9 @@ spec = [r"\.", r"\-", r"\/"]
 p = []
 for i in range(0, 3):
     pattern = rf'\b\d{{2}}{spec[i]}\d{{2}}{spec[i]}\d{{4}}\b'
-    p.extend(re.findall(pattern, text))	
-print(p)
+    p.extend(re.findall(pattern, text))
+end = []
+for elem in p:
+  elem = str(elem[0] + elem[1] + "-" + elem[3] + elem[4] + "-" + elem[6] + elem[7] + elem[8] + elem[9])
+  end.append(elem)
+print(end)
