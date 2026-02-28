@@ -14,6 +14,6 @@ for i in range(0, 3):
     p.extend(re.findall(pattern, text))
 end = []
 for elem in p:
-  elem = str(elem[0] + elem[1] + "-" + elem[3] + elem[4] + "-" + elem[6] + elem[7] + elem[8] + elem[9])
+  elem = str(elem[6] + elem[7] + elem[8] + elem[9] + "-" + elem[3] + elem[4] + "-" + elem[0] + elem[1])
   end.append(elem)
 print(end)
